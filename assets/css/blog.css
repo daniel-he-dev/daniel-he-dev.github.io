@@ -12,6 +12,7 @@
   font-weight: 700;
   color: var(--text-color);
   margin-bottom: 1rem;
+  font-family: var(--font-family-heading);
 }
 
 .blog-hero-description {
@@ -78,6 +79,7 @@
   text-decoration: none;
   font-weight: 600;
   font-size: 1.5rem;
+  font-family: var(--font-family-heading);
 }
 
 .blog-post-card h2 a:hover {
@@ -148,6 +150,7 @@
   max-width: 800px;
   margin: 0 auto 1rem;
   line-height: 1.2;
+  font-family: var(--font-family-heading);
 }
 
 .article-content {
@@ -167,6 +170,7 @@
   font-weight: 600;
   margin: 2rem 0 1rem;
   color: var(--text-color);
+  font-family: var(--font-family-heading);
 }
 
 .article-body h3 {
@@ -174,6 +178,7 @@
   font-weight: 600;
   margin: 1.5rem 0 1rem;
   color: var(--text-color);
+  font-family: var(--font-family-heading);
 }
 
 .article-body p {

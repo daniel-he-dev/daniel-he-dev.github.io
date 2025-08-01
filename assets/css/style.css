@@ -14,14 +14,15 @@
   --bg-light: #f8fafc;
   --border-color: #e2e8f0;
   --accent-color: #3b82f6;
-  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-family-body: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-family-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
   --transition: all 0.3s ease;
   --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 body {
-  font-family: var(--font-family);
+  font-family: var(--font-family-body);
   line-height: 1.6;
   color: var(--text-color);
   background-color: var(--bg-color);
@@ -66,6 +67,7 @@ nav {
   font-weight: 600;
   color: var(--primary-color);
   text-decoration: none;
+  font-family: var(--font-family-heading);
 }
 
 .nav-menu {
@@ -138,6 +140,7 @@ nav {
   color: var(--text-color);
   margin-bottom: 1rem;
   line-height: 1.1;
+  font-family: var(--font-family-heading);
 }
 
 .hero-subtitle {
@@ -145,6 +148,8 @@ nav {
   color: var(--primary-color);
   font-weight: 500;
   margin-bottom: 1.5rem;
+  font-family: var(--font-family-body);
+  letter-spacing: 0.025em;
 }
 
 .hero-description {
@@ -209,6 +214,7 @@ section {
   text-align: center;
   margin-bottom: 3rem;
   color: var(--text-color);
+  font-family: var(--font-family-heading);
 }
 
 /* About section */
@@ -230,6 +236,85 @@ section {
 }
 
 /* Experience section */
+.experience-timeline {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.experience-item {
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.experience-item:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.experience-header {
+  margin-bottom: 1.5rem;
+}
+
+.experience-header h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  font-family: var(--font-family-heading);
+}
+
+.company-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.company {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.duration {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.experience-details {
+  list-style: none;
+  padding: 0;
+}
+
+.experience-details li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.experience-details li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.contact-location {
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+/* Skills section */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -251,6 +336,7 @@ section {
   font-weight: 600;
   color: var(--primary-color);
   margin-bottom: 1rem;
+  font-family: var(--font-family-heading);
 }
 
 .skill-category ul {
@@ -265,6 +351,69 @@ section {
 
 .skill-category li:last-child {
   border-bottom: none;
+}
+
+/* Education section */
+.education {
+  background-color: var(--bg-color);
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.education-item {
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.education-item:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.education-header h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text-color);
+  font-family: var(--font-family-heading);
+  flex: 1;
+}
+
+.education-year {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.education-details {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.education-details strong {
+  color: var(--text-color);
 }
 
 /* Blog preview section */
@@ -301,6 +450,7 @@ section {
   color: var(--text-color);
   text-decoration: none;
   font-weight: 600;
+  font-family: var(--font-family-heading);
 }
 
 .blog-card h3 a:hover {
@@ -488,5 +638,22 @@ footer {
   
   .contact-form {
     padding: 1.5rem;
+  }
+}
+/* Additional responsive styles for new sections */
+@media (max-width: 768px) {
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .experience-item,
+  .education-item {
+    padding: 1.5rem;
+  }
+  
+  .company-info,
+  .education-header {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
