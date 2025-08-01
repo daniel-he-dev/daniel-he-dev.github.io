@@ -4,31 +4,15 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Daniel He | Full-stack Engineer</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
+    <title>Daniel He | Software Engineer</title>
+    <meta content="Personal website of Daniel He, Software Engineer" name="description" />
+    <meta content="software engineer, full-stack developer, web development" name="keywords" />
 
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon" />
 
     <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i&subset=cyrillic"
-      rel="stylesheet"
-    />
-
-    <!-- Vendor CSS Files -->
-    <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
-    <link
-      href="assets/vendor/owl.carousel/assets/owl.carousel.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
@@ -36,225 +20,159 @@
 
   <body>
     <nav>
-      <h1>Daniel He</h1>
-      <ul class="navigation">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-      <button class="burger-menu" id="burger-menu">
-        <ion-icon class="bars" name="menu-outline"></ion-icon>
-      </button>
+      <div class="nav-container">
+        <a href="/" class="nav-logo">Daniel He</a>
+        <ul class="nav-menu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="/blog" class="nav-link">Blog</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
     </nav>
 
-    <section class="hero" id="about">
-      <img
-        src="assets/img/portfolio/portfolio-1.jpg"
-        alt="daniel-he"
-        loading="lazy"
-        class="hero-img"
-      />
-      <div class="bio animate__animated animate__shakeX">
-        <h2 class="bio-title">About Me</h2>
-        <p class="bio-text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
-          dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
-          inventore tempore minus nemo, iste ullam illo laboriosam maiores
-          repudiandae quos!
-        </p>
-      </div>
-    </section>
-
-    <section class="more-about">
-      <h2>More About Me</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-        nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
-        autem deleniti cupiditate molestias quis unde quae totam porro dicta
-        iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-        nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
-        autem deleniti cupiditate molestias quis unde quae totam porro dicta
-        iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-        nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
-        autem deleniti cupiditate molestias quis unde quae totam porro dicta
-        iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
-      </p>
-    </section>
-
-    <section class="skills" id="skills">
-      <h2 class="skill-header">My Top Skills</h2>
-
-      <div class="skills-wrapper">
-        <div class="first-set animate__animated animate__pulse">
-          <img
-            src="assets/img/portfolio/portfolio-1.jpg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/img/portfolio/portfolio-1.jpg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/img/portfolio/portfolio-1.jpg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
-
-        <div class="second-set animate__animated animate__pulse">
-          <img
-            src="assets/img/portfolio/portfolio-1.jpg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/img/portfolio/portfolio-1.jpg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/img/portfolio/portfolio-1.jpg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
-      </div>
-    </section>
-
-    <section class="projects" id="projects">
-      <h2 class="projects-title">Some of my Recent Projects</h2>
-      <div class="projects-container">
-        <div class="project-container project-card">
-          <img
-            src="assets/images/expenseTracker.png"
-            alt="expense-tracker"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Expense Tracker</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
+    <main>
+      <section class="hero" id="about">
+        <div class="hero-content">
+          <h1 class="hero-title">Daniel He</h1>
+          <p class="hero-subtitle">Software Engineer</p>
+          <p class="hero-description">
+            I'm a passionate software engineer who loves building elegant solutions to complex problems. 
+            I enjoy working with modern technologies and creating user-centric applications.
           </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
+          <div class="hero-cta">
+            <a href="#contact" class="btn-primary">Get in touch</a>
+            <a href="/blog" class="btn-secondary">Read my blog</a>
+          </div>
         </div>
-        <div class="project-container project-card">
-          <img
-            src="assets/images/netflixClone.png"
-            alt="netflic-clone"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Netflix Clone</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
-        </div>
-        <div class="project-container project-card">
-          <img
-            src="assets/images/greenyEarth.png"
-            alt="greeny-earth"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Greeny Earth</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="contact" id="contact">
-      <h2>Get In Touch With Me</h2>
-      <div class="contact-form-container">
-        <div class="contact-form">
-          <form action="https://formspree.io/f/xyylngw" method="POST">
-            <div class="form-control">
-              <label for="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="sender-name"
-                placeholder="Enter Your Name"
-                class="input-field"
-                required
-              />
-            </div>
-            <div class="form-control">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="sender-email"
-                placeholder="Enter Your Email"
-                class="input-field"
-                required
-              />
-            </div>
-            <div class="form-control">
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                cols="60"
-                rows="10"
-                placeholder="Enter Your Message"
-                name="message"
-                class="input-field"
-                required
-              ></textarea>
-            </div>
-            <input
-              type="submit"
-              value="Submit"
-              id="submit-btn"
-              class="submit-btn"
-            />
-          </form>
+      <section class="about" id="about-detail">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-content">
+            <p>
+              I'm a software engineer with a passion for building scalable, user-friendly applications. 
+              I enjoy tackling complex technical challenges and turning ideas into reality through code.
+            </p>
+            <p>
+              When I'm not coding, you can find me exploring new technologies, contributing to open source projects, 
+              or writing about my experiences in software development on my blog.
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <div class="socials">
-      <a href="#" target="_blank"
-        ><img
-          src="assets/icons/icons8-linkedin.png"
-          alt="Linkedin"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="#" target="_blank"
-        ><img src="assets/icons/icons8-github.png" alt="Github" class="socicon"
-      /></a>
-    </div>
+      <section class="experience" id="experience">
+        <div class="container">
+          <h2 class="section-title">Experience & Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h3>Frontend</h3>
+              <ul>
+                <li>JavaScript/TypeScript</li>
+                <li>React, Vue.js</li>
+                <li>HTML5, CSS3</li>
+                <li>Responsive Design</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3>Backend</h3>
+              <ul>
+                <li>Node.js, Python</li>
+                <li>REST APIs</li>
+                <li>Database Design</li>
+                <li>Cloud Services</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3>Tools & Methods</h3>
+              <ul>
+                <li>Git, CI/CD</li>
+                <li>Docker, Kubernetes</li>
+                <li>Agile Development</li>
+                <li>Testing & QA</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog-preview">
+        <div class="container">
+          <h2 class="section-title">Latest Blog Posts</h2>
+          <div class="blog-grid">
+            <article class="blog-card">
+              <h3><a href="/blog/getting-started-with-react">Getting Started with React in 2024</a></h3>
+              <p class="blog-excerpt">A comprehensive guide to modern React development with hooks, context, and best practices.</p>
+              <time class="blog-date">January 15, 2024</time>
+            </article>
+            <article class="blog-card">
+              <h3><a href="/blog/nodejs-best-practices">Node.js Best Practices for Production</a></h3>
+              <p class="blog-excerpt">Essential tips and patterns for building robust Node.js applications that scale.</p>
+              <time class="blog-date">December 22, 2023</time>
+            </article>
+            <article class="blog-card">
+              <h3><a href="/blog/css-grid-vs-flexbox">CSS Grid vs Flexbox: When to Use Which</a></h3>
+              <p class="blog-excerpt">A practical comparison of CSS Grid and Flexbox with real-world examples.</p>
+              <time class="blog-date">November 8, 2023</time>
+            </article>
+          </div>
+          <div class="blog-cta">
+            <a href="/blog" class="btn-secondary">View all posts</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container">
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="contact-content">
+            <div class="contact-info">
+              <p>I'm always interested in new opportunities and collaborations. Feel free to reach out!</p>
+              <div class="contact-links">
+                <a href="mailto:danielhe.mlp@gmail.com" class="contact-link">
+                  <span>Email</span>
+                </a>
+                <a href="https://www.linkedin.com/in/danielhe96/" target="_blank" class="contact-link">
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/daniel-he-dev" target="_blank" class="contact-link">
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+            <form class="contact-form" action="https://formspree.io/f/xyylngw" method="POST">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="sender-name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="sender-email" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer>
-      <p class="copy">
-        Built with &#x2661; by
-        <a href="mailto:danielhe.mlp@gmail.com">Daniel He</a>
-      </p>
+      <div class="container">
+        <p>&copy; 2024 Daniel He. All rights reserved.</p>
+      </div>
     </footer>
+
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
